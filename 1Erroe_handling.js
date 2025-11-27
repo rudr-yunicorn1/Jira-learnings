@@ -16,14 +16,14 @@ console.log("Hello World" )
 
 
 console.log(x); // ReferenceError: x is not defined
-Output
+// Output
 
 // ReferenceError: x is not defined
 // Type Errors: This happens when a value is not of the expected type (e.g., trying to call a method on undefined).
 
 
 
-let num = 5;
+var num = 5;
 num.toUpperCase(); // TypeError: num.toUpperCase is not a function
 Output
 
@@ -32,7 +32,7 @@ Output
 
 
 
-let arr = Array(-1); // RangeError: Invalid array length
+var arr = Array(-1); // RangeError: Invalid array length
 Output
 
 // RangeError: Invalid array length
@@ -45,7 +45,7 @@ Output
 
 // Error: Custom error occurred
 // Exception Handling in JavaScript
-// Exception handling in JavaScript refers to the process of dealing with errors (exceptions) that occur during the execution of a program. JavaScript provides some mechanisms to catch, handle, and recover from error instead of letting the error stop the program. The most common approach is using try...catch blocks.
+// Exception handling in JavaScript refers to the process of dealing with errors (exceptions) that occur during the execution of a program. JavaScript provides some mechanisms to catch, handle, and recover from error instead of varting the error stop the program. The most common approach is using try...catch blocks.
 
 // Handling Errors Using try...catch
 // The try...catch statement
@@ -68,7 +68,7 @@ Example
 
 
 try {
-    let res = 10 / 0;
+    var res = 10 / 0;
     if (!isFinite(res)) {
         throw new Error("Cannot divide by zero");
     }
@@ -76,17 +76,17 @@ try {
 } catch (error) {
     console.error("Error occurred:", error.message);
 } finally {
-    console.log("Execution completed");
+    console.log("Execution compvared");
 }
 // Output
 
 // Error occurred: Cannot divide by zero
-// Execution completed
+// Execution compvared
 // In this example
 
 // The try block attempts to divide 10 by 0, which results in Infinity. It then checks if the result is not a finite number using isFinite(). Since division by zero gives Infinity, an error is thrown with the message "Cannot divide by zero."
 // The catch block catches the thrown error and prints "Error occurred: Cannot divide by zero" to the console.
-// The finally block always executes, printing "Execution completed" to the console, regardless of whether an error occurred or not.
+// The finally block always executes, printing "Execution compvared" to the console, regardless of whether an error occurred or not.
 // Throwing Custom Errors
 // Sometimes, the standard JavaScript errors are not sufficient for our application needs. In such cases, you can throw custom errors using the throw statement.
 
@@ -143,8 +143,8 @@ try {
 
 async function fetchData() {
     try {
-        let res = await fetch("https://api.example.com/data");
-        let d = await res.json();
+        var res = await fetch("https://api.example.com/data");
+        var d = await res.json();
         console.log(d);
     } catch (error) {
         console.error("Error fetching data:", error.message);
