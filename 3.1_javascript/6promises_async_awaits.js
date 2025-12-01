@@ -268,7 +268,6 @@ promisifiedLoadData().then((data) =>
 // Async  and Await 
 
 // Async and Await in JavaScript
-// Last Updated : 31 Jul, 2025
 // Async and Await in JavaScript are used to simplify handling asynchronous operations using promises. By enabling asynchronous code to appear synchronous, they enhance code readability and make it easier to manage complex asynchronous flows.
 
 
