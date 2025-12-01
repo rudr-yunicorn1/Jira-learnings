@@ -1,7 +1,7 @@
-// What is JavaScript Error?
+
 // In JavaScript, an error is a problem that prevents the code from running as expected. Errors can occur during development or while the application is running, causing the program to stop executing properly. There are different types of errors in JavaScript.
 
-// Types of Errors in JavaScript
+
 // Syntax Errors: This happens when the code doesn't follow the correct syntax (e.g., missing parentheses, brackets, or commas).
 
 
