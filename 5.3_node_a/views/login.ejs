@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+    <!-- above we are using the tailwind  -->
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white p-10" > 
+        <!-- above the div is storing  all the form inputes  -->
+        <h3 class="text-3xl mb-3">Login Pgae </h3>
+        <!-- this the heading  -->
+        <form method="post" action="/login">
+            <!-- above is the form type which means gives us the option to fill the data  -->
+            <input name="email" type="email" placeholder="email">
+            <input name="password" type="password" placeholder="password">
+            
+            <input type="submit" value="Login user">
+        </form>
+
+    </div>
+    
+</body>
+</html>
