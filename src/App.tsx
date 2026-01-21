@@ -1,15 +1,13 @@
 import './App.css'
-import Gallery from './components/Gallery';
-import Button from './components/Button';
+// import Gallery from './components/Gallery';
+import FileUpload from './components/FileUpload';
 
 function App() {
 
   return (
     <>
-    <h1>Hello</h1>
-    <Gallery/>
     {/* iam going to use a button  */}
-    <Button />
+    <FileUpload />
     </>
   )
 }
